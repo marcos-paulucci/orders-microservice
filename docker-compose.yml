@@ -1,0 +1,10 @@
+version: '2'
+services:
+    orders-server:
+        container_name: orders-server-spring
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: orders-server:latest
+        ports:
+            - "8080:8080"
